@@ -1,0 +1,8 @@
+return {
+  "projekt0n/github-nvim-theme",
+  lazy = false,
+  priority = 998,
+  config = function()
+--    vim.cmd("colorscheme github_light")
+  end,
+}
