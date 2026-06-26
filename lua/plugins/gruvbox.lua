@@ -1,6 +1,8 @@
 return {
-	'ellisonleao/gruvbox.nvim',
-	config = function()
---		require("gruvbox").load()
-	end
+  "ellisonleao/gruvbox.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    require("gruvbox").setup()
+  end,
 }
