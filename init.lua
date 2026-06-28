@@ -5,4 +5,4 @@ require("core.lazy")
 require("neovide")
 require("core.theme").apply()
 vim.keymap.set("n", "<leader>th", require("core.theme").pick, { desc = "Сменить тему" })
-
+vim.o.guifont = "0xProto Nerd Font:h14"
