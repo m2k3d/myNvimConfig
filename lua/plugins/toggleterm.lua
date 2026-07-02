@@ -30,7 +30,10 @@ return {
 				vim.keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]], opts)
 			end
 
-			vim.cmd("autocmd! TermOpen term://* lua set_terminal_keymaps()")
+			vim.api.nvim_create_autocmd("TermOpen", {
+				pattern = "term://*",
+				callback = set_terminal_keymaps,
+			})
 		end,
 	},
 }

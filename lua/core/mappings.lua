@@ -22,8 +22,17 @@ vim.keymap.set("n", "<c-b>", ":Neotree left reveal toggle<CR>")
 vim.keymap.set("n", "gl", vim.diagnostic.open_float)
 
 -- Переход к следующей/предыдущей ошибке (опционально)
-vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
-vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
+-- opts.float у vim.diagnostic.jump() устарел в 0.12 (удалят в 0.14) — используем on_jump
+local function diag_jump(count)
+  vim.diagnostic.jump({
+    count = count,
+    on_jump = function(_, bufnr)
+      vim.diagnostic.open_float({ bufnr = bufnr, scope = "cursor", focus = false })
+    end,
+  })
+end
+vim.keymap.set("n", "[d", function() diag_jump(-1) end)
+vim.keymap.set("n", "]d", function() diag_jump(1) end)
 
 -- Теперь вместо списка внизу будет открываться окно Telescope
 vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", { desc = "Go to Definition" })

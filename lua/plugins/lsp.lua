@@ -12,13 +12,7 @@ return {
 
             vim.lsp.enable('lua_ls')
             vim.lsp.enable('gopls')
-
-            vim.api.nvim_create_autocmd("BufWritePre", {
-                pattern = "*.go",
-                callback = function()
-                    vim.lsp.buf.format({ async = false })
-                end,
-            })
+            -- Форматирование при сохранении делает conform.nvim (goimports включает gofmt)
         end
     }
 }
