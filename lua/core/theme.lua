@@ -7,6 +7,7 @@ M.themes = {
   "github_dark",
   "gruvbox",
   "kanagawa-lotus",
+  "kanagawa-dragon",
   "onedark",
 }
 

@@ -27,3 +27,12 @@ vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
 
 -- Теперь вместо списка внизу будет открываться окно Telescope
 vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", { desc = "Go to Definition" })
+
+vim.keymap.set("n", "<leader>tw", function()
+  vim.wo.wrap = not vim.wo.wrap
+  if vim.wo.wrap then
+    vim.cmd("Neominimap WinDisable")
+  else
+    vim.cmd("Neominimap WinEnable")
+  end
+end, { desc = "Toggle wrap + minimap" })

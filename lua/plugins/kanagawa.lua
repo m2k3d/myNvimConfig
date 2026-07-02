@@ -7,7 +7,7 @@ return {
       compile = false,
       undercurl = true,
       transparent = false,
-      theme = "lotus",
+      theme = "dragon",
     })
   end,
 }

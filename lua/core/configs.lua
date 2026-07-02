@@ -36,3 +36,6 @@ vim.keymap.set("n", "<S-l>", ":BufferLineCycleNext<CR>", { silent = true })
 vim.keymap.set("n", "<S-h>", ":BufferLineCyclePrev<CR>", { silent = true })
 
 vim.opt.termguicolors = true
+
+vim.opt.linebreak = true
+vim.opt.breakindent = true

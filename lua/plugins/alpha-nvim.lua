@@ -8,7 +8,6 @@ return {
     -- Массив с путями к вашим папкам (можно добавлять и удалять элементы)
     local my_directories = {
       "C:/Users/kulag/AppData/Local/nvim",
-	  "C:/Users/kulag/OneDrive/Documents/sessions",
 	  "C:/!projects",
       -- Добавьте сюда любые другие пути
     }
