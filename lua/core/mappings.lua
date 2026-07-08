@@ -12,7 +12,7 @@ vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
 
 -- SplitScreen
 vim.keymap.set("n", "|", ":vsplit<CR>")
-vim.keymap.set("n", "\\", ":split<CR>")
+vim.keymap.set("n", [[\\]], ":split<CR>")
 
 -- NeoTreeKeyMapping
 vim.keymap.set("n", "<c-b>", ":Neotree left reveal toggle<CR>")

@@ -1,6 +1,6 @@
 -- Leader (должен быть установлен до маппингов и загрузки lazy.nvim)
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.mapleader = "\\"
+vim.g.maplocalleader = "\\"
 
 -- Line Numbers
 vim.wo.number = true
