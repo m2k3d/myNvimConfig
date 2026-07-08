@@ -9,6 +9,7 @@ M.themes = {
   "kanagawa-lotus",
   "kanagawa-dragon",
   "onedark",
+  "nordic",
 }
 
 local cache = vim.fn.stdpath("data") .. "/theme.txt"
