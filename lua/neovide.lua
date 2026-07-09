@@ -39,7 +39,8 @@ vim.g.neovide_padding_right  = 8
 --  ПРОЗРАЧНОСТЬ И ФОН
 -- ------------------------------------------------------------
 -- Прозрачность окна: 0.0 = полностью прозрачное, 1.0 = непрозрачное.
-vim.g.neovide_opacity = 1.0
+vim.g.neovide_opacity = 1
+-- vim.g.neovide_normal_opacity = 1
 
 -- Размытие фона под прозрачным окном (только macOS/Wayland, на Windows игнорируется).
 vim.g.neovide_window_blurred = false
