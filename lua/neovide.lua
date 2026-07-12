@@ -140,3 +140,6 @@ vim.g.neovide_refresh_rate = 185
 -- FPS, когда окно НЕ в фокусе (свернуто/другое окно сверху).
 -- Низкое значение экономит ресурсы, на плавность не влияет.
 vim.g.neovide_refresh_rate_idle = 5
+
+-- просто для теста собственной фичи 
+-- vim.g.neovide_background_image = "C:/Users/PC/Documents/bg.png"
