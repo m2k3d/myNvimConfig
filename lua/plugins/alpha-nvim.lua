@@ -7,7 +7,7 @@ return {
 
     -- Массив с путями к вашим папкам (можно добавлять и удалять элементы)
     local my_directories = {
-      "/home/matthew/.config/nvim"
+      "C:/Users/PC/AppData/Local/nvim"
       -- Добавьте сюда любые другие пути
     }
 
