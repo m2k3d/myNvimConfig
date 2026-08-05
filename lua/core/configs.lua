@@ -20,7 +20,7 @@ vim.opt.softtabstop = 4
 
 -- Other
 vim.opt.scrolloff = 8
--- wrap управляется в plugins/neominimap.lua (по умолчанию false, тоггл — <leader>tw)
+-- wrap: по умолчанию false, тоггл вместе с codemap — <leader>tw (см. core/mappings.lua)
 vim.opt.termguicolors = true
 
 -- Fillchars

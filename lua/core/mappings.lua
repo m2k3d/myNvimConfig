@@ -40,8 +40,8 @@ vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", { desc = "Go to 
 vim.keymap.set("n", "<leader>tw", function()
   vim.wo.wrap = not vim.wo.wrap
   if vim.wo.wrap then
-    vim.cmd("Neominimap WinDisable")
+    vim.cmd("CodemapClose")
   else
-    vim.cmd("Neominimap WinEnable")
+    vim.cmd("CodemapOpen")
   end
-end, { desc = "Toggle wrap + minimap" })
+end, { desc = "Toggle wrap + codemap" })
