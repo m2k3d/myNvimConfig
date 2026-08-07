@@ -2,14 +2,8 @@ local M = {}
 
 -- список тем: ключ = colorscheme, который вызывается через :colorscheme
 M.themes = {
-  "catppuccin-latte",
-  "catppuccin-mocha",
-  "github_dark",
-  "gruvbox",
   "kanagawa-lotus",
   "kanagawa-dragon",
-  "onedark",
-  "nordic",
 }
 
 local cache = vim.fn.stdpath("data") .. "/theme.txt"
