@@ -4,6 +4,7 @@ local M = {}
 M.themes = {
   "kanagawa-lotus",
   "kanagawa-dragon",
+  "luna",
 }
 
 local cache = vim.fn.stdpath("data") .. "/theme.txt"
